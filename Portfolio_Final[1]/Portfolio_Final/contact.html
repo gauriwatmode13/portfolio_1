@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Arial', sans-serif;
+        }
+    
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          background-color: #f0f0f0;
+        }
+    
+        .contact-box {
+          background: #fff;
+          padding: 40px;
+          border-radius: 10px;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+          width: 400px;
+          margin-top: 80px; /* Adjust this margin if you have a fixed header */
+        }
+    
+        .contact-box h2 {
+          text-align: center;
+          margin-bottom: 20px;
+          font-size: 24px;
+          color: #333;
+        }
+    
+        .input-box {
+          position: relative;
+          margin-bottom: 20px;
+        }
+    
+        .input-box input,
+        .input-box textarea {
+          width: 100%;
+          padding: 10px;
+          font-size: 16px;
+          color: #333;
+          background: #f9f9f9;
+          border: none;
+          border-bottom: 2px solid #333;
+          outline: none;
+          resize: none;
+        }
+    
+        .input-box textarea {
+          min-height: 100px;
+        }
+    
+        .input-box label {
+          position: absolute;
+          left: 10px;
+          top: 12px;
+          padding: 0 5px;
+          font-size: 16px;
+          color: #666;
+          transition: 0.3s;
+        }
+    
+        .input-box input:focus + label,
+        .input-box input:valid + label,
+        .input-box textarea:focus + label,
+        .input-box textarea:valid + label {
+          top: -20px;
+          left: 5px;
+          font-size: 14px;
+          color: #333;
+        }
+    
+        .btn {
+          width: 100%;
+          padding: 10px;
+          font-size: 16px;
+          background-color: #333;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+          transition: background 0.3s;
+        }
+    
+        .btn:hover {
+          background-color: #555;
+        }
+        .contact-icons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .contact-icons a {
+      font-size: 30px;
+      color: #333;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-icons a:hover {
+      color: #0073b1; /* LinkedIn blue color */
+    }
+      </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>GAURI</span></a>
+        <nav class="navbar">
+        <a href="index.html" class="active">Portfolio</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+    </nav>
+    <a href="contact.html" class="contact">Contact Me</a>
+    </header>
+    <section>
+        <div class="contact-box">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+              <div class="input-box">
+                <input type="text" name="name" required>
+                <label for="name">Your Name</label>
+              </div>
+              <div class="input-box">
+                <input type="email" name="email" required>
+                <label for="email">Your Email</label>
+              </div>
+              <div class="input-box">
+                <textarea name="message" required></textarea>
+                <label for="message">Your Message</label>
+              </div>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+          <div class="contact-container"><br><br>
+            <h2>Contact Me</h2>
+        
+            <div class="contact-info">
+              <p>Email: <a href="mailto:gauriwatmode13@gmail.com">gauriwatmode13@gmail.com</a></p>
+              <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+              <p>Linkedin: <a href="linkedin.com/in/gauri-22be2005">linkedin.com/in/gauri-22be2005</a></p>
+            </div>
+        
+            <div class="contact-icons">
+              <!-- LinkedIn Icon with Profile Link -->
+              <a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn Profile">
+                <i class="fab fa-linkedin"></i>
+              </a>
+          </div>
+</body>
+</html>
